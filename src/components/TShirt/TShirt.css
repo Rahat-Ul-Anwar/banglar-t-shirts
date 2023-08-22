@@ -1,0 +1,26 @@
+.tshirt{
+    width: 300px;
+    height: 400px;
+    box-shadow: 4px 3px 12px 1px rgba(0,0,0,0.66);
+    padding: 20px;
+    border-radius: 8px;
+ 
+   
+    
+}
+
+.tshirt img{
+    width: 250px;
+    height: 250px;
+}
+
+.add-cart-btn{
+    border-radius: 5px;
+    background-color: coral;
+    border: none;
+    padding: 8px;
+    width: 150px;
+    margin-left: 10px;
+    height: 40px;
+
+}
