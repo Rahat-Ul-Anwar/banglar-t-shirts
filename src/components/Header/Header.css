@@ -1,0 +1,27 @@
+.navbar  {
+    background-color: coral;
+    width: 100%;
+    padding: 15px 10px;
+}
+.navbar a {
+ margin-left: 30px;
+ color:  white;
+}
+
+.navbar .search-bar {
+    padding: 8px;
+    margin-left: 30px;
+    width: 30%;
+    border: none;
+    height: 20px;
+
+}
+
+.search-btn{
+    border-radius: 0;
+    border: none;
+    padding: 8px;
+    width: 100px;
+    margin-left: 10px;
+    height: 40px;
+}
