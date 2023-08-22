@@ -4,6 +4,7 @@ import TShirt from '../TShirt/TShirt';
 import './Home.css';
 import Cart from '../Cart/Cart';
 import { useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 const Home = () => {
     const tshirts = useLoaderData();
@@ -12,14 +13,32 @@ const Home = () => {
 
 
     const handleAddToCart = (tshirt) => {
-        if (tshirt) {
+        const exist = cart.find(ts => ts._id === tshirt._id);
+
+        if (exist) {
+            toast('You have already added T shirt')
+
+        }
+        else {
             
             const newCart = [...cart, tshirt];
             setCart(newCart);
-            
+
         }
+            
+           
+            
         
+        
+    };
+
+    const handleRemoveItem = (id) => {
+        const remaining = cart.filter(pd => pd._id !== id);
+        setCart(remaining);
     }
+        
+    
+
     return (
         <div className='home-container'>
 
@@ -33,12 +52,16 @@ const Home = () => {
                   
                         
                         </TShirt>)
-                }
+                };
             </div>
 
             <div className='cart-container'>
 
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}
+                    handleRemoveItem={handleRemoveItem}
+                >
+
+                </Cart>
 
             </div>
         </div>

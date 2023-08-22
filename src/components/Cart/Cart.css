@@ -3,3 +3,31 @@
    top: 70px;
     
 }
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.remove-button{
+    background-color: coral;
+}
+
+
+.orange {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: purple;
+}
+.lawngreen {
+    background-color: lawngreen;
+}
+.gold {
+    background-color: gold;
+}

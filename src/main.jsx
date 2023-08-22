@@ -11,6 +11,7 @@ import About from "./components/About/About.jsx";
 import NoFound from "./components/NoFound/NoFound.jsx";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
